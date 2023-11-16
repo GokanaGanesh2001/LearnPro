@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Lesson</title>
+    <link rel="stylesheet" type="text/css" href="addLesson.css">
+
+</head>
+<body>
+ 
+   <header>
+            <!--<div class="logo">LearnPro</div>-->
+            <div class="logo">
+                <span id="s1">L</span>
+                <span class="s1">e</span>
+                <span class="s1">a</span>
+                <span class="s1">r</span>
+                <span class="s1">n</span>
+                <span id="s2">P</span>
+                <span class="s2">r</span>
+                <span class="s2">o</span>
+              </div>
+
+    </header>
+    <div class="container">
+        <h2>Add New Lesson</h2>
+        <form action="/addLesson" method="post">
+			<div class="form-group">
+                <label>Course ID:</label>
+                <input type="text" id="course" name="course" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lessonID">Lesson ID:</label>
+                <input type="text" id="lessonID" name="lessonId" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lessonName">Lesson Name:</label>
+                <input type="text" id="lessonName" name="lessonName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lessonTopics">Lesson Topics:</label>
+                <input type="text" id="lessonTopics" name="lessonTopics" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lessonLink">Lesson Link:</label>
+                <input type="url" id="lessonLink" name="lessonLink" required>
+            </div>
+
+            <button type="submit">ADD LESSON</button>
+        </form>
+    </div>
+</body>
+</html>

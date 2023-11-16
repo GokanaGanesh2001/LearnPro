@@ -1,0 +1,99 @@
+body {
+	background-color: #333;
+	font-family: Arial, sans-serif;
+}
+
+#d3 {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: #333;
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 5%;
+}
+
+#s1,
+#s2 {
+	color: #ff9900;
+	font-size: 40px;
+	;
+	font-weight: bolder;
+}
+
+.s1,
+.s2 {
+	font-size: 30px;
+	;
+	font-weight: bolder;
+	color: #fff;
+}
+
+.registration-form {
+	max-width: 400px;
+	margin: 100px auto 20px;
+	background-color: #ff9900;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+
+.registration-form h2 {
+	text-align: center;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.form-group label {
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.form-group input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	box-sizing: border-box;
+	/* Add this line to ensure input width includes padding and border */
+}
+
+.form-group input[type="radio"] {
+	display: inline-block;
+	width: auto;
+	margin-right: 10px;
+}
+
+.btn-register {
+	display: block;
+	width: 100%;
+	padding: 12px;
+	background-color: #333;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn-register:hover {
+	background-color: black;
+}
+
+.login-link {
+	text-align: center;
+	margin-top: 15px;
+	font-weight: 900;
+}
+
+.login-link a:hover {
+	color: red;
+}

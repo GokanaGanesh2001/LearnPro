@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LearnPro - Professional Website</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!--<div class="logo">LearnPro</div>-->
+            <div class="logo">
+                <span id="s1">L</span>
+                <span class="s1">e</span>
+                <span class="s1">a</span>
+                <span class="s1">r</span>
+                <span class="s1">n</span>
+                <span id="s2">P</span>
+                <span class="s2">r</span>
+                <span class="s2">o</span>
+              </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
+        <h1>Welcome to LearnPro</h1>
+        <p>Your pathway to success.</p>
+        <a href="/login" class="btn-primary" type="submit">Start Learning</a>
+        
+    </div>
+    <div class="content">
+        <!-- Your content goes here -->
+    </div>
+    <footer>
+        <div class="container">
+            <!-- Footer content goes here -->
+            <p>&copy; 2023 LearnPro. All rights reserved.</p>
+        </div>
+		<div th:if="${param.logout}">
+			<p>You have been logged out successfully.</p>
+		</div>
+
+    </footer>
+</body>
+</html>

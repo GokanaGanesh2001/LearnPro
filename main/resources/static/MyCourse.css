@@ -1,0 +1,97 @@
+/* Reset some default styles for body and button */
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	background-color: #333;
+}
+
+/* Your existing button styles */
+.back-button {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	/* Changed to right */
+	background-color: #ff9900;
+	color: #333;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: medium;
+	border-radius: 0.25rem;
+}
+
+/* Your other styles for IDs and classes */
+#d3 {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: #333;
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 5%;
+}
+
+#s1,
+#s2 {
+	color: #ff9900;
+	font-size: 40px;
+	font-weight: bolder;
+	text-align: left;
+	/* Changed to left */
+}
+
+.s1,
+.s2 {
+	font-size: 30px;
+	font-weight: bolder;
+	color: #fff;
+	text-align: left;
+	/* Changed to left */
+}
+
+.container {
+	text-align: center;
+	border: 5px ridge #333;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	max-width: 600px;
+	width: 100%;
+	background-color: #ff9900;
+	font-weight: bolder;
+}
+
+/* Apply styles to the table */
+.table {
+	border-collapse: collapse;
+	/* Collapse table borders */
+	width: 100%;
+	margin-top: 20px;
+	background-color: bisque;
+}
+
+/* Apply styles to table header cells (th) */
+th {
+	border: 2px solid black;
+	padding: 10px;
+	text-align: center;
+	background-color: #333;
+	color: #ff9900;
+}
+
+/* Apply styles to table data cells (td) */
+td {
+	border: 2px solid black;
+	padding: 10px;
+	text-align: center;
+}
+
+td a {
+	text-decoration: none;
+	color: linear-gradient(to right, #ff9900, mediumblue);
+}

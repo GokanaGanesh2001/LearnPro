@@ -1,0 +1,82 @@
+/* Reset some default styles for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#333;
+}
+
+/* Container styles */
+.container {
+    background-color:#ff9900;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Header styles */
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Table styles */
+.table {
+    width: 100%;
+    border-collapse:separate;
+    background-color:bisque;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align:center;
+    font-size: large;
+    border: 2px solid black;
+    font-weight: bold;
+    
+}
+
+/* Table header styles */
+.table th {
+    background-color: #333;
+    color:#ff9900;
+}
+
+/* Video container styles */
+.embed-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+/* Video iframe styles */
+.embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 28%;
+    width: 50%;
+    height: 50%;
+}
+.back-button {
+	position: absolute;
+	top: 5%;
+	right: 8%;
+	/* Changed to right */
+	background-color:#333;
+	color:#ff9900;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: medium;
+	border-radius: 0.25rem;
+}
+h2{
+	color: black;
+	font-weight: bolder;
+	font-size: x-large;
+}

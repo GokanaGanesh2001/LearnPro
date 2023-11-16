@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses Information</title>
+    <link rel="stylesheet" type="text/css" href="viewCourse.css">
+</head>
+<body>
+	<div id="d3">
+    <h2 id="s1">L</h2>
+    <h3 class="s1">E</h3>
+    <h3 class="s1">A</h3>
+    <h3 class="s1">R</h3>
+    <h3 class="s1">N</h3>
+    <h2 id="s2">P</h2>
+    <h3 class="s2">R</h3>
+    <h3 class="s2">O</h3>
+  </div>
+    <div class="container">
+        <h2>All Courses Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>courseId</th>
+                    <th>courseName</th>
+                    <th>coursePrice</th>
+                </tr>
+            </thead>
+            <tbody>
+                 <tr th:each="cl:${courseList}">
+                     
+                     <td><span th:text="${cl.courseId}"></td>
+                     <td><span th:text="${cl.courseName}"></td>
+                     <td><span th:text="${cl.coursePrice}"></td>
+                 </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

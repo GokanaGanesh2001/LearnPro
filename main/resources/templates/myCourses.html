@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>My Courses</title>
+	<link rel="stylesheet" type="text/css" href="MyCourse.css">
+
+</head>
+
+<body>
+	<a href="/studentHome"><button class="back-button">Back</button></a>
+	<div id="d3">
+		<h2 id="s1">L</h2>
+		<h3 class="s1">E</h3>
+		<h3 class="s1">A</h3>
+		<h3 class="s1">R</h3>
+		<h3 class="s1">N</h3>
+		<h2 id="s2">P</h2>
+		<h3 class="s2">R</h3>
+		<h3 class="s2">O</h3>
+	</div>
+	<div class="container">
+		<h2>Your Courses</h2>
+		<table class="table table-success table-striped table-bordered">
+			<thead>
+				<tr>
+					<th scope="col">Course Id</th>
+					<th scope="col">Course Name</th>
+					<th scope="col">Course Price</th>
+					<th scope="col">Lessons</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="course:${courseList}">
+					<td th:text="${course.courseId}"></td>
+					<td th:text="${course.courseName}"></td>
+					<td th:text="${course.coursePrice}"></td>
+					<td>
+						<span th:each="lesson, lessonStat : ${course.lessonList}">
+							<a th:href="@{/viewLesson(lessonId=${lesson.lessonId})}"
+								th:text="${lesson.lessonName}"></a><span th:if="${!lessonStat.last}">, </span>
+						</span>
+
+
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+</body>
+
+</html>
